@@ -1,5 +1,6 @@
 # capstone-project-icl
 Capstone Project
+Capstone Project created as part of the Professional Certificate in Machine Learning and Artificial Intelligence (Imperial College London).
 
 Capstone Project Repository
 # Black-Box Optimisation: Insurance Pricing Challenge
