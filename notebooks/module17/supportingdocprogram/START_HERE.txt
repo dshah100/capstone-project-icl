@@ -1,0 +1,277 @@
+================================================================================
+BBO CAPSTONE PROJECT - ROUND 6 SUBMISSION
+START HERE GUIDE
+================================================================================
+
+Welcome! This package contains everything you need to complete Stage 2:
+Round 6 of your Black-Box Optimization capstone project.
+
+================================================================================
+WHAT YOU NEED TO COMPLETE
+================================================================================
+
+Part 1: Generate and submit Round 6 queries (8 functions)
+Part 2: Write reflection connecting BBO to CNNs (< 700 words)
+
+================================================================================
+QUICKEST PATH TO COMPLETION
+================================================================================
+
+STEP 1: Run the Master Script
+------------------------------
+Command: python capstone_round6.py
+
+This opens a menu with all tools. For first-time users, select Option 1 (Demo)
+to see how everything works with example data.
+
+STEP 2: Enter Your Portal Results
+----------------------------------
+Select Option 2 from the menu (or run directly):
+Command: python quick_round6_generator.py
+
+This will:
+  • Guide you through entering portal results from Rounds 1-5
+  • Generate optimized Round 6 queries automatically
+  • Create visualizations of your progress
+  • Save queries in portal-ready format
+
+STEP 3: Validate Your Work
+---------------------------
+Select Option 3 from the menu (or run directly):
+Command: python validate_submission.py
+
+This checks:
+  • Query format (6 decimal places, correct dimensions)
+  • Reflection word count (< 700 words)
+  • File completeness
+
+STEP 4: Submit to Portal
+-------------------------
+1. Open file: round_6_portal_submission.txt
+2. Copy each query (format: x1-x2-x3-...-xn)
+3. Go to capstone portal (link from Module 12 email)
+4. Paste and submit for each function
+
+STEP 5: Complete Reflection
+----------------------------
+1. Open file: round_6_reflection.md
+2. Fill in each section with YOUR specific examples
+3. Keep under 700 words total
+4. Post to discussion board
+5. Engage with peer posts
+
+================================================================================
+FILES CREATED FOR YOU
+================================================================================
+
+MAIN TOOLS:
+-----------
+capstone_round6.py              - Master menu (START HERE!)
+quick_round6_generator.py       - Quick query generator
+validate_submission.py          - Submission validator
+demo_workflow.py                - Complete demo with mock data
+
+FRAMEWORK:
+----------
+bbo_capstone_framework.py       - Full Bayesian Optimization framework
+                                  (Gaussian Process + Expected Improvement)
+
+DOCUMENTATION:
+--------------
+README_ROUND6.md                - Complete guide with examples
+round_6_reflection.md           - Reflection template with CNN parallels
+START_HERE.txt                  - This file
+
+YOUR DATA:
+----------
+1st.log                         - Your initial Round 1 queries
+query_history.json              - Your accumulated results (create/update)
+
+OUTPUT FILES (generated):
+-------------------------
+round_6_portal_submission.txt   - Copy-paste ready queries
+round_6_queries_[time].txt      - Detailed query output
+function_*_progress.png         - Optimization visualizations
+query_history_export.csv        - Data export for analysis
+
+================================================================================
+IMPORTANT REMINDERS
+================================================================================
+
+QUERY FORMAT:
+  • Must be: x1-x2-x3-...-xn
+  • Each value: 0.XXXXXX (6 decimal places, starting with 0)
+  • Example 2D: 0.123456-0.789012
+  • Example 3D: 0.111111-0.222222-0.333333
+
+FUNCTION DIMENSIONS:
+  Function 1: 2D    Function 5: 6D
+  Function 2: 3D    Function 6: 7D
+  Function 3: 4D    Function 7: 8D
+  Function 4: 5D    Function 8: 9D
+
+REFLECTION:
+  • Must be < 700 words total
+  • Use specific examples from YOUR data
+  • Connect each CNN concept to YOUR BBO strategy
+  • Include actual distances, function IDs, round numbers
+
+================================================================================
+IF YOU'RE STUCK
+================================================================================
+
+SCENARIO 1: First time using this?
+→ Run: python capstone_round6.py
+→ Select Option 1 (Demo)
+→ This shows the complete workflow with mock data
+
+SCENARIO 2: Don't have previous round results?
+→ You need portal results from Rounds 1-5 to generate Round 6
+→ If you haven't submitted yet, start with 1st.log queries
+→ Or run demo to understand the process first
+
+SCENARIO 3: Queries not improving?
+→ Check visualizations: python capstone_round6.py → Option 4
+→ Try more exploration: increase xi parameter
+→ Discuss in your reflection (challenges are valuable learning!)
+
+SCENARIO 4: Reflection too long?
+→ Remove generic CNN descriptions
+→ Focus on YOUR specific examples only
+→ Cut redundant explanations
+
+SCENARIO 5: Technical errors?
+→ Check Python is installed with required packages:
+  - numpy
+  - matplotlib
+  - scikit-learn
+  - scipy
+→ Install: pip install numpy matplotlib scikit-learn scipy
+
+================================================================================
+THE STRATEGY BEHIND THE FRAMEWORK
+================================================================================
+
+This framework uses BAYESIAN OPTIMIZATION:
+
+1. Gaussian Process (GP)
+   • Learns the unknown objective function from your observations
+   • Provides mean prediction (expected distance)
+   • Provides uncertainty estimate (confidence)
+
+2. Expected Improvement (EI)
+   • Acquisition function that balances exploration vs exploitation
+   • Exploitation: Query near best known point
+   • Exploration: Query in uncertain/promising regions
+
+3. Iterative Refinement
+   • Each round improves the model with new data
+   • Strategy adapts based on accumulated knowledge
+   • Similar to how CNNs learn hierarchically!
+
+KEY PARAMETERS:
+  xi (exploration): 0.01 default (higher = more exploration)
+  kernel: Matern(ν=2.5) for moderate smoothness
+  alpha: 1e-6 for noise/regularization
+
+================================================================================
+CHECKLIST FOR SUBMISSION
+================================================================================
+
+PART 1: QUERIES
+[ ] Entered portal results from Rounds 1-5
+[ ] Generated Round 6 queries
+[ ] Validated query format
+[ ] Submitted to capstone portal
+[ ] Recorded results for future rounds
+
+PART 2: REFLECTION
+[ ] Completed all 5 prompts
+[ ] Used specific examples from MY data
+[ ] Connected CNN concepts to BBO strategy
+[ ] Kept under 700 words
+[ ] Posted to discussion board
+[ ] Engaged with peer posts (2-3 minimum)
+
+BONUS
+[ ] Generated progress visualizations
+[ ] Compared different strategies (EI vs UCB)
+[ ] Analyzed which functions improved most
+[ ] Prepared questions for next module
+
+================================================================================
+SUCCESS METRICS
+================================================================================
+
+Evaluate your Round 6 performance:
+
+1. Query Efficiency = (Initial distance - Current distance) / 6
+2. Improvement Rate = Compare Round 6 to Round 5
+3. Convergence = Are your best queries clustering?
+4. Uncertainty = Is your GP becoming more confident?
+5. Ranking = How do you compare to peers?
+
+Don't worry if some functions aren't improving much - that's normal and
+valuable to discuss in your reflection!
+
+================================================================================
+NEXT STEPS AFTER ROUND 6
+================================================================================
+
+1. When you get Round 6 results from portal:
+   • Add them to query_history.json
+   • Run the generator again for Round 7
+   • Refine strategy based on what you learned
+
+2. Learn from discussion board:
+   • See what strategies peers used
+   • Compare different approaches
+   • Consider trying alternative methods
+
+3. Prepare for final rounds:
+   • Rounds 7-8: More exploitation (lower exploration)
+   • Focus on refining best regions found
+   • Balance between functions (allocate effort wisely)
+
+================================================================================
+NEED MORE HELP?
+================================================================================
+
+1. Run the demo: python demo_workflow.py
+2. Read the README: README_ROUND6.md
+3. Check reflection template: round_6_reflection.md
+4. Ask on discussion board
+5. Review example output from demo
+
+================================================================================
+TIPS FOR EXCELLENCE
+================================================================================
+
+DO:
+  ✓ Visualize your progress before submitting
+  ✓ Use specific numbers from your data in reflection
+  ✓ Discuss both successes AND challenges
+  ✓ Connect each CNN concept to concrete BBO decisions
+  ✓ Engage meaningfully with peers
+
+DON'T:
+  ✗ Submit without validating first
+  ✗ Write generic reflection without personal examples
+  ✗ Ignore the 700-word limit
+  ✗ Copy template text verbatim
+  ✗ Rush - understanding > speed
+
+================================================================================
+GOOD LUCK WITH ROUND 6!
+================================================================================
+
+Remember: The goal isn't just finding the optimum - it's understanding
+your optimization strategy and connecting it to broader ML concepts like CNNs.
+
+Your reflection on the journey is more valuable than the final distance!
+
+Questions? Check the menu help (Option 7) or ask on the discussion board.
+
+Now run: python capstone_round6.py
+
+================================================================================

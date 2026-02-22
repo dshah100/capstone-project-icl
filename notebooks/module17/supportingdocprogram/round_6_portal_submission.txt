@@ -1,0 +1,83 @@
+ROUND 6 QUERIES - February 6, 2026
+============================================================
+
+Copy and paste these queries into the capstone portal:
+
+Function 1:
+0.550000-0.500000
+
+Function 2:
+0.895432-0.465123-0.405678
+
+Function 3:
+0.465890-0.568234-0.545678-0.587654
+
+Function 4:
+0.456789-0.492345-0.445678-0.534567-0.518234
+
+Function 5:
+0.518345-0.556789-0.492345-0.545678-0.512345-0.441234
+
+Function 6:
+0.492345-0.408765-0.452345-0.536789-0.468765-0.567890-0.518234
+
+Function 7:
+0.534567-0.176543-0.028765-0.342345-0.965432-0.523456-0.854321-0.089876
+
+Function 8:
+0.298765-0.487654-0.745678-0.905432-0.408765-0.912345-0.512345-0.789012-0.883456
+
+============================================================
+STRATEGY NOTES:
+============================================================
+
+These Round 6 queries use REFINED EXPLOITATION - exploring near your best
+regions from Rounds 1-5 with intelligent perturbations:
+
+Function 1 (2D): 
+  Best so far: Round 4 (result: 2.61e-20 ≈ 0)
+  Strategy: Exploring center region [0.55, 0.50]
+  Rationale: All queries near 0, try different area
+
+Function 2 (3D): 
+  Best so far: Round 2 (result: 0.021)
+  Strategy: Near [0.933, 0.446, 0.388] with small perturbation
+  Rationale: Strong performance, refine this region
+
+Function 3 (4D): 
+  Best so far: Round 5 (result: 0.022)
+  Strategy: Near [0.477, 0.580, 0.558, 0.579] with exploration
+  Rationale: Consistent improvement trend
+
+Function 4 (5D):
+  Best so far: Round 4 (result: 3.116)
+  Strategy: Between Round 4 & 5, slight perturbation
+  Rationale: Steady convergence continues
+
+Function 5 (6D):
+  Best so far: Round 4 (result: 11.727)
+  Strategy: Near [0.526, 0.572, 0.488, 0.555, 0.509, 0.440]
+  Rationale: Best performance at Round 4
+
+Function 6 (7D):
+  Best so far: Round 5 (result: 0.910)
+  Strategy: Near [0.487, 0.397, 0.444, 0.541, 0.461, 0.575, 0.522]
+  Rationale: Consistent improvement, explore nearby
+
+Function 7 (8D):
+  Best so far: Round 2 (result: 0.002)
+  Strategy: Near [0.520, 0.155, 0.015, 0.324, 0.991, 0.513, 0.876, 0.067]
+  Rationale: Excellent result, refine this region
+
+Function 8 (9D):
+  Best so far: Round 2 (result: 7.586)
+  Strategy: Near [0.284, 0.469, 0.762, 0.923, 0.393, 0.929, 0.500, 0.802, 0.897]
+  Rationale: Best at Round 2, explore nearby
+
+APPROACH:
+This is a BALANCED strategy combining:
+- EXPLOITATION: Queries near your best-performing regions
+- EXPLORATION: Small perturbations to discover even better points
+- Given 5 rounds of data, this refined search should optimize results
+
+============================================================
