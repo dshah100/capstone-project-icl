@@ -1,0 +1,68 @@
+ROUND 10 QUERIES - 19 Data Points (Module 21)
+============================================================
+
+Copy and paste these queries into the capstone portal:
+
+Function 1:
+0.559934-0.497235
+
+Function 2:
+0.999844-0.000034-0.708236
+
+Function 3:
+0.000001-0.000001-0.615263-0.842771
+
+Function 4:
+0.999999-0.000001-0.992515-0.000002-0.895787
+
+Function 5:
+0.313471-0.488795-0.999999-0.602369-0.849144-0.657693
+
+Function 6:
+0.283844-0.993469-0.472347-0.679504-0.054585-0.634531-0.667397
+
+Function 7:
+0.999882-0.000349-0.999999-0.999877-0.843777-0.000007-0.000032-0.000001
+
+Function 8:
+0.999999-0.000001-0.999999-0.000001-0.114554-0.999999-0.999999-0.988025-0.999999
+
+============================================================
+FORMAT: Each value 0.XXXXXX (6 decimal places)
+============================================================
+
+STRATEGY REASONING (per function):
+------------------------------------------------------------
+
+Function 1 (2D):
+  Best result so far: -0.0000000000
+  Reasoning: F1 is effectively solved (all outputs ~0). Submitting a small perturbation from the best-known point to confirm the basin of attraction.
+
+Function 2 (3D):
+  Best result so far: -0.0634857618
+  Reasoning: GP predicts mu=0.0659, sigma=0.2109 at proposed point. EI acquisition with xi=0.001 favours exploitation near best region.
+
+Function 3 (4D):
+  Best result so far: -0.0832152579
+  Reasoning: GP predicts mu=-0.0802, sigma=0.0102 at proposed point. EI acquisition with xi=0.001 favours exploitation near best region.
+
+Function 4 (5D):
+  Best result so far: -21.3856056746
+  Reasoning: GP predicts mu=-23.1159, sigma=3.0223 at proposed point. EI acquisition with xi=0.001 favours exploitation near best region.
+
+Function 5 (6D):
+  Best result so far: 5.9314304069
+  Reasoning: GP predicts mu=-82.2226, sigma=57.8292 at proposed point. EI acquisition with xi=0.003 favours exploitation near best region.
+
+Function 6 (7D):
+  Best result so far: -2.5414978764
+  Reasoning: GP predicts mu=-2.3998, sigma=0.2538 at proposed point. EI acquisition with xi=0.003 favours exploitation near best region.
+
+Function 7 (8D):
+  Best result so far: 0.0004207131
+  Reasoning: GP predicts mu=0.0331, sigma=0.0810 at proposed point. EI acquisition with xi=0.003 favours exploitation near best region.
+
+Function 8 (9D):
+  Best result so far: 7.2347767365
+  Reasoning: GP predicts mu=4.5017, sigma=0.3038 at proposed point. EI acquisition with xi=0.003 favours exploitation near best region.
+
