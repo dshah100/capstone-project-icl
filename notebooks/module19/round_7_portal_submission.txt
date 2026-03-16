@@ -1,0 +1,44 @@
+ROUND 7 QUERIES - 16 Data Points
+============================================================
+
+Copy and paste these queries into the capstone portal:
+
+Function 1:
+0.550123-0.499876
+
+Function 2:
+0.918234-0.452341-0.391567
+
+Function 3:
+0.478234-0.579123-0.547890-0.586543
+
+Function 4:
+0.451234-0.498765-0.448901-0.532109-0.515678
+
+Function 5:
+0.524567-0.561234-0.491234-0.552345-0.508901-0.442345
+
+Function 6:
+0.489012-0.401234-0.448901-0.538901-0.464567-0.572345-0.519876
+
+Function 7:
+0.521234-0.158901-0.018765-0.331234-0.984567-0.512345-0.861234-0.072345
+
+Function 8:
+0.291234-0.472345-0.751234-0.908901-0.401234-0.918901-0.501234-0.791234-0.891234
+
+============================================================
+IMPORTANT: Run round7_generator.py for GP-optimized queries
+============================================================
+
+These are strategy-based queries. For Bayesian-optimized queries
+using your 16 data points, run:
+
+  python round7_generator.py
+
+from the notebooks/module18 directory. That will overwrite this
+file with GP-proposed queries.
+
+============================================================
+FORMAT: Each value 0.XXXXXX (6 decimal places)
+============================================================
