@@ -1,0 +1,68 @@
+ROUND 11 QUERIES - 20 Data Points (Module 22)
+============================================================
+
+Copy and paste these queries into the capstone portal:
+
+Function 1:
+0.557451-0.497926
+
+Function 2:
+0.000021-0.999991-0.790833
+
+Function 3:
+0.000007-0.000001-0.685479-0.330449
+
+Function 4:
+0.999999-0.000001-0.999999-0.000001-0.999999
+
+Function 5:
+0.999999-0.579618-0.999420-0.904498-0.334814-0.427739
+
+Function 6:
+0.839883-0.597888-0.452427-0.124543-0.320003-0.593155-0.516219
+
+Function 7:
+0.999943-0.999902-0.999997-0.999999-0.000090-0.000008-0.000001-0.195919
+
+Function 8:
+0.999999-0.999999-0.999999-0.999999-0.999999-0.999999-0.999999-0.000001-0.000001
+
+============================================================
+FORMAT: Each value 0.XXXXXX (6 decimal places)
+============================================================
+
+CLUSTER-GUIDED REASONING (per function):
+------------------------------------------------------------
+
+Function 1 (2D):
+  Best result so far: -0.0000000000
+  Reasoning: F1 solved (all outputs ~0). Small perturbation from the central cluster centroid near (0.55, 0.50).
+
+Function 2 (3D):
+  Best result so far: -0.0634857618
+  Reasoning: Cluster 2 centroid guided candidate sampling (60% biased). GP predicts mu=0.1071, sigma=0.2196. Distance to cluster centroid: 0.5082, to cluster best: 0.4557.
+
+Function 3 (4D):
+  Best result so far: -0.1285901986
+  Reasoning: Cluster 1 centroid guided candidate sampling (60% biased). GP predicts mu=-0.1992, sigma=0.0505. Distance to cluster centroid: 0.6150, to cluster best: 0.5171.
+
+Function 4 (5D):
+  Best result so far: -39.9346747819
+  Reasoning: Cluster 1 centroid guided candidate sampling (60% biased). GP predicts mu=-39.5784, sigma=4.2048. Distance to cluster centroid: 0.4704, to cluster best: 0.1045.
+
+Function 5 (6D):
+  Best result so far: 5.9314304069
+  Reasoning: Cluster 0 centroid guided candidate sampling (60% biased). GP predicts mu=-45.9708, sigma=56.3951. Distance to cluster centroid: 1.1489, to cluster best: 1.2860.
+
+Function 6 (7D):
+  Best result so far: -2.5414978764
+  Reasoning: Cluster 2 centroid guided candidate sampling (60% biased). GP predicts mu=-2.4038, sigma=0.2450. Distance to cluster centroid: 0.8479, to cluster best: 0.8479.
+
+Function 7 (8D):
+  Best result so far: 0.0000026647
+  Reasoning: Cluster 1 centroid guided candidate sampling (60% biased). GP predicts mu=-0.0075, sigma=0.0213. Distance to cluster centroid: 2.0016, to cluster best: 1.8601.
+
+Function 8 (9D):
+  Best result so far: 4.2843391705
+  Reasoning: Cluster 2 centroid guided candidate sampling (60% biased). GP predicts mu=4.2859, sigma=0.0266. Distance to cluster centroid: 1.8968, to cluster best: 2.1818.
+
