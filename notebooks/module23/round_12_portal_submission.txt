@@ -1,0 +1,68 @@
+ROUND 12 QUERIES - 22 Data Points (Module 23)
+============================================================
+
+Copy and paste these queries into the capstone portal:
+
+Function 1:
+0.553974-0.498894
+
+Function 2:
+0.999997-0.000004-0.811363
+
+Function 3:
+0.100000-0.000001-0.695744-0.999999
+
+Function 4:
+0.850000-0.000001-0.999999-0.150000-0.800000
+
+Function 5:
+0.154671-0.900000-0.020000-0.900000-0.300000-0.250000
+
+Function 6:
+0.771469-0.649998-0.809398-0.121973-0.381539-0.971928-0.838881
+
+Function 7:
+0.999998-0.000007-0.999999-0.999998-0.000001-0.000004-0.000001-0.153647
+
+Function 8:
+0.999999-0.804464-0.999999-0.000001-0.999999-0.000001-0.999999-0.999999-0.999999
+
+============================================================
+FORMAT: Each value 0.XXXXXX (6 decimal places)
+============================================================
+
+PCA-GUIDED REASONING (per function):
+------------------------------------------------------------
+
+Function 1 (2D):
+  Best result so far: -0.0000000000
+  Reasoning: F1 solved (all outputs ~0). Tiny perturbation from (0.55, 0.50); PCA shows both PCs have negligible correlation with output.
+
+Function 2 (3D):
+  Best result so far: -0.0634857618
+  Reasoning: PCA-guided GP-BO (PC2 r=-0.442 drives search). GP: mu=0.0380, sigma=0.1923. Dist to best: 1.0488, to elite centre: 1.1611.
+
+Function 3 (4D):
+  Best result so far: -0.1791737760
+  Reasoning: F3: PCA PC0 (r=-0.882***) confirms low-x1/x2, high-x3 basin. DE bounded to [0,0.1]x[0,0.1]x[0.5,0.85]. Scanning x4. GP: mu=-0.1675, sigma=0.0346.
+
+Function 4 (5D):
+  Best result so far: -40.3483539562
+  Reasoning: F4: PCA PC0 (r=-0.962***) aligns with [1,0,1,0,1] corner. DE bounded near corner. GP: mu=-38.9081, sigma=2.8434.
+
+Function 5 (6D):
+  Best result so far: 5.9314304069
+  Reasoning: F5: PCA PC1 (r=+0.820***) shows high x1/x3 drive HIGH output. DE bounded to interior [low x1/x3, moderate x2/x4] near R9 basin. GP: mu=-53.86, sigma=182.83.
+
+Function 6 (7D):
+  Best result so far: -2.5414978764
+  Reasoning: PCA-guided GP-BO (PC0 r=+0.834 drives search). GP: mu=-2.4235, sigma=0.2176. Dist to best: 0.9179, to elite centre: 0.7801.
+
+Function 7 (8D):
+  Best result so far: 0.0000026647
+  Reasoning: PCA-guided GP-BO (PC1 r=+0.795 drives search). GP: mu=0.0023, sigma=0.0061. Dist to best: 0.8577, to elite centre: 0.8092.
+
+Function 8 (9D):
+  Best result so far: 3.0783167400
+  Reasoning: PCA-guided GP-BO (PC1 r=-0.787 drives search). GP: mu=3.3272, sigma=0.1908. Dist to best: 2.0095, to elite centre: 1.3018.
+
