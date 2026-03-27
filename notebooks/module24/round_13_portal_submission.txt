@@ -1,0 +1,53 @@
+ROUND 13 (FINAL) QUERIES - Module 24
+============================================================
+
+Copy and paste these queries into the capstone portal:
+
+Function 1: 0.552484-0.499309
+Function 2: 0.269780-0.540961-0.729531
+Function 3: 0.020438-0.022484-0.676802-0.996617
+Function 4: 0.909783-0.070593-0.940804-0.099008-0.947165
+Function 5: 0.219793-0.628069-0.045847-0.841035-0.346101-0.306628
+Function 6: 0.705579-0.982381-0.722097-0.071583-0.332315-0.523331-0.352767
+Function 7: 0.991639-0.145234-0.874739-0.921939-0.768149-0.012965-0.110491-0.014169
+Function 8: 0.904838-0.579905-0.997313-0.145771-0.823689-0.888622-0.961541-0.174824-0.033977
+
+============================================================
+FORMAT: Each value 0.XXXXXX (6 decimal places)
+============================================================
+
+RL-INFORMED REASONING (per function):
+------------------------------------------------------------
+
+Function 1 (2D):
+  Best result (11 rounds): -0.0000000000
+  Strategy: F1 converged (all ~0). Final confirmation query near (0.55, 0.50) with minimal perturbation. RL analogue: greedy policy on converged Q-table.
+
+Function 2 (3D):
+  Best result (11 rounds): -0.0634857618
+  Strategy: F2: Tight exploitation around R8/R1 basin (~0.12, ~0.57, ~0.74). x3 (r=-0.53) high. DE bounded [0,0.3]x[0.35,0.75]x[0.6,0.9]. GP: mu=-0.0474, sigma=0.0237.
+
+Function 3 (4D):
+  Best result (11 rounds): -0.1791737760
+  Strategy: F3: PCA PC0 r=-0.882 confirms low-x1/x2, high-x3 basin. Final tight DE [0,0.08]x[0,0.08]x[0.55,0.85]. GP: mu=-0.1692, sigma=0.0288.
+
+Function 4 (5D):
+  Best result (11 rounds): -40.3483539562
+  Strategy: F4: Final exploitation at [1,0,1,0,1] corner (PCA r=-0.962). Ultra-tight DE bounds [0.9,1]x[0,0.1]. Hybrid EI+UCB. GP: mu=-35.2067, sigma=1.5504. RL analogue: greedy action on highest-Q state.
+
+Function 5 (6D):
+  Best result (11 rounds): 5.9314304069
+  Strategy: F5: Interior refinement near R9 best (5.93). Low x1/x3 critical (PCA r=+0.820). DE bounded to safe interior. GP: mu=45.10, sigma=192.56. RL analogue: epsilon-greedy with epsilon~0.05.
+
+Function 6 (7D):
+  Best result (11 rounds): -2.5414978764
+  Strategy: F6: Hardest function (7D, best R2=-2.54). Multi-basin search: R2 (50%), R8 (20%), R11 (15%), global (15%). Higher UCB weight (0.4) for exploration. GP: mu=-1.3703, sigma=0.4923. RL analogue: soft-max policy over multiple high-Q states.
+
+Function 7 (8D):
+  Best result (11 rounds): 0.0000026647
+  Strategy: F7: Final exploitation at [1,0,1,1,*,0,0,0] boundary pattern. x8 (r=+0.92) critical: keep near 0. Tight DE bounds. GP: mu=-0.000010, sigma=0.002385. RL analogue: greedy on highest-Q state with x5 as free variable.
+
+Function 8 (9D):
+  Best result (11 rounds): 3.0783167400
+  Strategy: F8: Refining R11 [1,1,1,1,1,1,1,0,0] pattern. x1(r=-0.83), x3(r=-0.80), x7(r=-0.73) all high. x2,x4,x5,x8,x9 scanned. GP: mu=3.8301, sigma=0.2683.
+
