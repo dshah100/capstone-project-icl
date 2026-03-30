@@ -12,8 +12,8 @@ Over 10 iterative rounds, the optimisation strategy evolved from random explorat
 
 | Document | Description |
 |----------|-------------|
-| [Datasheet](DATASHEET.md) | Dataset documentation covering motivation, composition, collection process, preprocessing, and distribution |
-| [Model Card](MODEL_CARD.md) | Optimisation approach documentation covering strategy, performance, assumptions, limitations, and ethical considerations |
+| [Datasheet](https://github.com/dshah100/capstone-project-icl/tree/main/blob/main/docs/DATASHEET.md) | Dataset documentation covering motivation, composition, collection process, preprocessing, and distribution |
+| [Model Card](https://github.com/dshah100/capstone-project-icl/tree/main/blob/main/docs/MODEL_CARD.md) | Optimisation approach documentation covering strategy, performance, assumptions, limitations, and ethical considerations |
 
 ## Repository Structure
 
